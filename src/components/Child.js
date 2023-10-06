@@ -22,7 +22,7 @@ const Child = ({cartItems,handleRemoveItem}) =>{
                     cartItems && cartItems.map((item)=>(
                         <li key={item.id}>
                             <span>{item.name}</span>
-                            <span>{`-$${item.price}`}</span>
+                            <span>{` - $${item.price}`}</span>
                             <button onClick={()=>removeItem(item.id)}>Remove</button>
                         </li>
 
